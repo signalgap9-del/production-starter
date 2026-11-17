@@ -42,8 +42,8 @@ merge release PR ─→ tag + GitHub release ─→ [add deploy job on release_c
 
 ## Adopt in a repo
 
-1. Copy everything except this README into the repo root.
-2. Make `package.json` expose `lint`, `typecheck`, `test`, `build`, `start` (missing ones are skipped).
+1. Copy everything except this README into the repo root, and move `workflows/` into `.github/workflows/`.
+2. Make `package.json` expose `lint`, `typecheck`, `test`, `build`, `start` (a zero-dependency Node 22 reference server + unit test + Playwright smoke test are included out of the box).
 3. `npm i -D @playwright/test` and replace `e2e/smoke.spec.ts` with the real first screen.
 4. Edit `.github/CODEOWNERS` and the `AGENTS.md` brackets.
 5. Private repo: keep `publish_results: false` in scorecard.yml. Non-Node stack: swap ci.yml steps and the CodeQL language matrix.
