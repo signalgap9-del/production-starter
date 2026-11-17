@@ -1,0 +1,6 @@
+AGENTS.local.md
+.devin/config.local.json
+.devin/mcp_config.local.json
+node_modules/
+playwright-report/
+test-results/

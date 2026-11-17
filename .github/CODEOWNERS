@@ -1,0 +1,5 @@
+# Replace @your-team with real owners. Owners are auto-requested for review;
+# with branch protection "require code owner review", their approval is mandatory.
+*                     @your-team
+/.github/             @your-team
+/docs/adr/            @your-team

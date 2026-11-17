@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "permissions": {
+    "deny": [
+      "Exec(sudo)",
+      "Exec(git push --force)",
+      "Exec(git push -f)",
+      "Exec(git reset --hard)",
+      "Exec(git clean -fd)"
+    ],
+    "ask": [
+      "Exec(git push)",
+      "Exec(gh pr merge)",
+      "Exec(gh release)",
+      "Exec(npm publish)",
+      "Write(**/.env*)",
+      "Write(.github/workflows/**)"
+    ]
+  }
+}
